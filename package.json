@@ -1,9 +1,8 @@
 {
   "name": "react_spa",
-  "homepage": ".",
+  "homepage": "https://Menna-elshahawy.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Menna-elshahawy.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
