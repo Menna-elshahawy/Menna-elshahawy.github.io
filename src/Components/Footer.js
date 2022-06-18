@@ -4,6 +4,8 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
+  faGithub,
+
 } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,6 +34,10 @@ class Footer extends Component {
 	              <a href="https://www.instagram.com/menna_elshahawy/" target="_blank"
 	                className="instagram social">
 	                <FontAwesomeIcon icon={faInstagram} size="2x" />
+	            </a>
+	            <a href="https://github.com/Menna-elshahawy/" target="_blank"
+	                className="instagram social">
+	                <FontAwesomeIcon icon={faGithub} size="2x" />
 	            </a>
 	         </div>
 	         <hr/>
