@@ -219,5 +219,6 @@ img:hover {
 
   .middlepane{
     width: 90%;
+    padding-right: 15px;
   }
 }

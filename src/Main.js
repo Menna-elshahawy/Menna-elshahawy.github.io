@@ -18,7 +18,6 @@ class Main extends Component {
     return (
     <div>        
           <Navigationbar/>
-          
           <Resume/>
           <Portfolio/>
           <More/>
