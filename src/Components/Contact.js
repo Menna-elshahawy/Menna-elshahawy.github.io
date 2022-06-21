@@ -8,11 +8,7 @@ class More extends Component {
       <hr/>
         <h1 className="centered titles">MORE ABOUT ME</h1>
       <div className="container_resume">
-          <div className="leftpane">
 
-            <img className= "personal_photo" src={PersonalPhoto} alt="Menna Elshahawy"/>
-            
-        </div>
 
           <div className="middlepane">
               <p>
