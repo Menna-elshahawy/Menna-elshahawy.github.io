@@ -201,3 +201,23 @@ img{
 img:hover {
   transform: translateY(-3px);
 }
+
+
+@media screen and (max-width: 600px) {
+  .personal_photo {
+    visibility: hidden;
+    clear: both;
+  }
+  .container_resume {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    }
+
+  .middlepane{
+    width: 90%;
+  }
+}
