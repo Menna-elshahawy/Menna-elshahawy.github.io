@@ -1,45 +1,89 @@
 import React, { Component } from "react";
-
+import ReactModal from "react-modal";
+import MyModalComponent from './bootstrap-modal.component';
 
 import AKidKode from './AKidKode.png'; 
 import AKidKode_logo_Website from './AKidKode_Website.jpg'; 
 import AKidKode_logo_SG from './AKidKode_SG.jpg'; 
 import Iinteract from './I_Interact.jpg'; 
 
-const tokenlist = [
+const projects_list = [
   {
+    id:1,
     logo: AKidKode_logo_SG,
     name: "AKidKode Serious Game",
-    description: "AKidKode Unity3D Game: A Serious Game Teaching Coding to children with ASD"
+    description: "AKidKode Unity3D Game: A Serious Game Teaching Coding to children with ASD",
+    embedId: "qlzR9ghEibI"
   },
   {
+    id:2,
     logo: AKidKode_logo_Website,
     name: "AKidKode Website",
-    description: "AKidKode Website: A Block-Based programming website"
+    description: "AKidKode Website: A Block-Based programming website",
+    embedId: "qlzR9ghEibI"
+
   },
   {
+    id:3,
     logo: Iinteract,
     name: "I-interact Serious Game",
-    description: "I-Interact: A VR game to improve eye contact for individuals with social impairments"
+    description: "I-Interact: A VR game to improve eye contact for individuals with social impairments",
+    embedId: "BzurANMZVe0"
   }
-  
+
 ];
 
+
 class Portfolio extends Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      show: false,
+      title: '',
+      body: '',
+      data: []
+    };
+  }
+  
+  handleShow = (item) => {
+    this.setState({
+          show: true,
+          title: item.name,
+          body: item.description,
+          data: projects_list
+        });
+  };
+   handleClose = (fromModal) => {
+    // alert(fromModal.msg);
+
+    this.setState({
+      show: false
+    });
+  };
 
   render() {
     return (
       <div className = "container" id="portfolio">
             <hr/>
+
             <h1 className="centered titles">PORTFOLIO</h1>
             <div className="row flex-column-reverse flex-md-row centered">
-              {tokenlist && tokenlist.map((a, index) => (
-                <div className="col-md-8 col-sm-10 col-lg-4">
-                  <img className="portfolio_element shadow" src={a.logo} alt={a.name} />
-                 <h6 className="centered description">{a.description}</h6>
+              {projects_list && projects_list.map((a, index) => (
+                <div className="col-md-8 col-sm-10 col-lg-4" key={index}>
+                  <img className="portfolio_element shadow" src={a.logo} alt={a.name} onClick={() => this.handleShow(a)} />
+                   <h6 className="centered description">{a.description}</h6>
                 </div>
               ))}
           </div>
+
+        <MyModalComponent
+          show={this.state.show}
+          title={this.state.title}
+          body={this.state.body}
+          data={this.state.data}
+          onClick={this.handleClose}
+          onHide={this.handleClose} />
         </div>
     );
   }

@@ -73,7 +73,7 @@ ul,p{
 }
 
 .middlepane {
-    width: 70%;
+    width: 60%;
     height: 100%;
     float: left;
 }
@@ -149,8 +149,7 @@ ul,p{
 
 .description{
     font-family: RobotoSlab;
-    padding: 20px;
-
+    padding-top: 20px;
 }
 
 
@@ -171,6 +170,44 @@ ul,p{
     list-style-type:none;
 }
 
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  padding: 2em;
+  min-width: 20em;
+  max-width: 70%;
+  color: #f00;
+  background-color: #fff;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  outline: transparent;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+}
+
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 a.social {
   margin: 0 1rem;
   transition: transform 300ms;
