@@ -11,26 +11,25 @@ class MyModalComponent extends Component {
 
         return (
             <div>
-                <Modal show={this.props.show} onHide={() => this.props.onHide({ msg: `https://www.youtube.com/embed/{this.props.embedId}` })}>
+                <Modal show={this.props.show} size='lg' onHide={() => this.props.onHide()}>
 
                     <Modal.Header closeButton>
-                        <Modal.Title>
+                        <Modal.Title className="modal_titles">
                             {this.props.title}
                         </Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
-                        {this.props.body}
                          <div className="video-responsive">
-                              <ReactPlayer
-                                url= {this.props.video_url}
-
-                              />
+                              <ReactPlayer url= {this.props.video_url}/>
+                        </div>
+                        <div className="description">
+                            {this.props.description_elaborate}
                         </div>
                     </Modal.Body>
 
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={() => this.props.onClick({ msg: 'Modal Closed!' })} >Close</Button>
+                        <Button variant="secondary" onClick={() => this.props.onClick()} >Close</Button>
                     </Modal.Footer>
 
                 </Modal>
