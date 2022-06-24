@@ -1,5 +1,6 @@
 // src/components/bootstrap-carousel.component.js
 import React, { Component } from "react";
+import ReactPlayer from "react-player"
 
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +11,7 @@ class MyModalComponent extends Component {
 
         return (
             <div>
-                <Modal show={this.props.show} onHide={() => this.props.onHide({ msg: 'Cross Icon Clicked!' })}>
+                <Modal show={this.props.show} onHide={() => this.props.onHide({ msg: `https://www.youtube.com/embed/{this.props.embedId}` })}>
 
                     <Modal.Header closeButton>
                         <Modal.Title>
@@ -21,16 +22,11 @@ class MyModalComponent extends Component {
                     <Modal.Body>
                         {this.props.body}
                          <div className="video-responsive">
-                            <iframe
-                              width="853"
-                              height="480"
-                              src={`https://www.youtube.com/embed/${this.props.embedId}`}
-                              frameBorder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowFullScreen
-                              title="Embedded youtube"
-                            />
-                      </div>
+                              <ReactPlayer
+                                url= {this.props.video_url}
+
+                              />
+                        </div>
                     </Modal.Body>
 
                     <Modal.Footer>

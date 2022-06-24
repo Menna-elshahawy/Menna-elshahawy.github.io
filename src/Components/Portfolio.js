@@ -13,14 +13,14 @@ const projects_list = [
     logo: AKidKode_logo_SG,
     name: "AKidKode Serious Game",
     description: "AKidKode Unity3D Game: A Serious Game Teaching Coding to children with ASD",
-    embedId: "qlzR9ghEibI"
+    video_url: "https://www.youtube.com/embed/qlzR9ghEibI"
   },
   {
     id:2,
     logo: AKidKode_logo_Website,
     name: "AKidKode Website",
     description: "AKidKode Website: A Block-Based programming website",
-    embedId: "qlzR9ghEibI"
+    video_url: "https://www.youtube.com/embed/qlzR9ghEibI"
 
   },
   {
@@ -28,7 +28,7 @@ const projects_list = [
     logo: Iinteract,
     name: "I-interact Serious Game",
     description: "I-Interact: A VR game to improve eye contact for individuals with social impairments",
-    embedId: "BzurANMZVe0"
+    video_url: "https://www.youtube.com/embed/BzurANMZVe0"
   }
 
 ];
@@ -42,19 +42,20 @@ class Portfolio extends Component {
       show: false,
       title: '',
       body: '',
-      data: []
+      video_url: ''
     };
-  }
+  };
   
   handleShow = (item) => {
     this.setState({
           show: true,
           title: item.name,
           body: item.description,
-          data: projects_list
+          video_url: item.video_url
         });
   };
-   handleClose = (fromModal) => {
+
+  handleClose = (fromModal) => {
     // alert(fromModal.msg);
 
     this.setState({
@@ -75,15 +76,15 @@ class Portfolio extends Component {
                    <h6 className="centered description">{a.description}</h6>
                 </div>
               ))}
-          </div>
+             </div>
 
-        <MyModalComponent
-          show={this.state.show}
-          title={this.state.title}
-          body={this.state.body}
-          data={this.state.data}
-          onClick={this.handleClose}
-          onHide={this.handleClose} />
+            <MyModalComponent
+              show={this.state.show}
+              title={this.state.title}
+              body={this.state.body}
+              video_url={this.state.video_url}
+              onClick={this.handleClose}
+              onHide={this.handleClose} />
         </div>
     );
   }
