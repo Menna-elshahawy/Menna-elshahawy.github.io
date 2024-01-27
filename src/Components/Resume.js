@@ -9,12 +9,12 @@ class Resume extends Component {
     <div className="container_resume" id="resume">
       <div className="leftpane">
 
-          <img className= "personal_photo" src={PersonalPhoto} alt="Menna Elshahawy Personl Photo"/>
+          <img className= "personal_photo" src={PersonalPhoto} alt="Menna Elshahawy"/>
 
       </div>
 
       <div className="middlepane">
-          <h1 className="resume_name">Menna Elshahawy <a className="btn btn-primary me-2" href={ResumePDF} Download="Menna_Elshahawy_CV.pdf" target="_blank" role="button">Download PDF version <i className="fas fa-download"></i></a></h1>
+          <h1 className="resume_name">Menna Elshahawy <a className="btn btn-primary me-2" href={ResumePDF} Download="Menna_Elshahawy_CV.pdf" target="_blank" rel="noreferrer" role="button">Download PDF version <i className="fas fa-download"></i></a></h1>
 
 
           <p>I am a graduate from the German University in Cairo (GUC),
@@ -116,7 +116,7 @@ class Resume extends Component {
           <h1 className = "sections_titles" >PUBLICATIONS </h1>
           <div>
             <h4 className = "resume_positions">Codaroutine: A serious game for introducing 
-            sequential programming concepts to children with autism<a href="https://ieeexplore.ieee.org/abstract/document/9125196" target="_blank" className="icon"></a></h4>
+            sequential programming concepts to children with autism<a href="https://ieeexplore.ieee.org/abstract/document/9125196" target="_blank" rel="noreferrer" className="icon"> </a></h4>
             <h5 className = "locations">2020 IEEE Global Engineering Education Conference (EDUCON)</h5>
             <p>Problem solving, analyzing the validity of a solution and spotting patterns in data are all substantial skills needed in the workplace nowadays not only in the programming field. Solving and generating multiple solutions to a problem is quite challenging for children with autism spectrum disorders. As a solution, the work in this paper presents the design, implementation and the evaluation of a serious game that focuses on the sequential programming concepts.
              The presented game aims to teach problem solving skills to children with autism.
@@ -129,14 +129,14 @@ class Resume extends Component {
 
 
 
-            <h4 className = "resume_positions">Developing Computational Thinking for Children with Autism using a Serious Game <a href="https://ieeexplore.ieee.org/abstract/document/9373147" target="_blank"  className="icon"></a></h4>
+            <h4 className = "resume_positions">Developing Computational Thinking for Children with Autism using a Serious Game <a href="https://ieeexplore.ieee.org/abstract/document/9373147" target="_blank" rel="noreferrer" className="icon"> </a></h4>
             <h5 className = "locations">2020 24th International Conference Information Visualisation (IV)</h5>
             <p>Autism Spectrum Disorder (ASD) refers to a group of life-long conditions that are characterized by qualitative impairments in social interactions, problem solving and constructive skills. Children with learning disabilities such as autism face challenges in generating suitable and optimal solutions to problems. Those challenges can severely affect their interactions with others. Thus, teaching children with ASD problem solving and computational thinking skills could help them resolve conflicts that may happen in their everyday life. Effective problem solving is critical for their academic and social success and since one of the most effective tools for teaching children with autism is through using visual aids, the work in this paper reports the design and implementation of a serious game that aims at cultivating problem solving skills and teaching programming concepts to children with ASD. The presented game is suitable for children 7 to 14 years of age diagnosed with ASD to learn programming concepts. The preliminary prototype for the game gained positive responses from experts and 12 children with ASD from Caritas Egypt association and Hope Academy.
             </p>
             <p className="dates">07-11 September 2020</p>
 
             
-            <h4 className = "resume_positions">I-interact: A virtual reality serious game for eye contact improvement for children with social impairment <a href="https://link.springer.com/chapter/10.1007/978-3-319-70111-0_14" target="_blank"  className="icon"></a></h4>
+            <h4 className = "resume_positions">I-interact: A virtual reality serious game for eye contact improvement for children with social impairment <a href="https://link.springer.com/chapter/10.1007/978-3-319-70111-0_14" target="_blank" rel="noreferrer" className="icon"> </a></h4>
             <h5 className = "locations">2020 24th International Conference Information Visualisation (IV)</h5>
             <p>Eye contact is among the most substantial yet underrated non-verbal social communicative behaviors. Establishing and maintaining eye contact is quite challenging for children affected by social impairment. As a solution, we propose a virtual reality serious game to help improve eye gaze abilities for these children and facilitate the transfer of the acquired skills to real-world social interactions. The project comprised of the design, implementation and evaluation of a three levels game that emphasizes on different aspects of eye contact. According to the evaluation carried out in this research, a virtual reality gaming context is a promising strategy for gaze development of children with social deficiencies.
             </p>

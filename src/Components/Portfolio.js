@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ReactModal from "react-modal";
+// import ReactModal from "react-modal";
 import MyModalComponent from './bootstrap-modal.component';
 
-import AKidKode from './AKidKode.png'; 
+// import AKidKode from './AKidKode.png'; 
 import AKidKode_logo_Website from './AKidKode_Website.jpg'; 
 import AKidKode_logo_SG from './AKidKode_SG.jpg'; 
 import Iinteract from './I_Interact.jpg'; 

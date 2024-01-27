@@ -19,23 +19,23 @@ class Footer extends Component {
 		    <div className="mt-5 pt-5 pb-5 footer centered">
 		    	<h1 className="footer_name">Menna Elshahawy</h1>
 		    	<div>
-						<a href="https://www.facebook.com/menna.elshahawy95/" target="_blank"
+						<a href="https://www.facebook.com/menna.elshahawy95/" target="_blank" rel="noreferrer"
 	                className="facebook social">
 	                <FontAwesomeIcon icon={faFacebook} size="2x" />
 	              </a>
-	              <a href="https://www.youtube.com/channel/UC-0njRKg2ODD766T7LP6tdQ" target="_blank"
+	              <a href="https://www.youtube.com/channel/UC-0njRKg2ODD766T7LP6tdQ" target="_blank" rel="noreferrer"
 	                className="youtube social">
 	                <FontAwesomeIcon icon={faYoutube} size="2x" />
 	              </a>
-	            <a href="https://www.linkedin.com/in/menna-elshahawy/" target="_blank"
+	            <a href="https://www.linkedin.com/in/menna-elshahawy/" target="_blank" rel="noreferrer"
 	                className="facebook social">
 	                <FontAwesomeIcon icon={faLinkedin} size="2x" />
 	            </a>
-	              <a href="https://www.instagram.com/menna_elshahawy/" target="_blank"
+	              <a href="https://www.instagram.com/menna_elshahawy/" target="_blank" rel="noreferrer"
 	                className="instagram social">
 	                <FontAwesomeIcon icon={faInstagram} size="2x" />
 	            </a>
-	            <a href="https://github.com/Menna-elshahawy/" target="_blank"
+	            <a href="https://github.com/Menna-elshahawy/" target="_blank" rel="noreferrer"
 	                className="instagram social">
 	                <FontAwesomeIcon icon={faGithub} size="2x" />
 	            </a>
