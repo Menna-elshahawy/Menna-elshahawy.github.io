@@ -9,11 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<Main/>);
 
-// // root.render(
-// //     <React.StrictMode>
-// //     <Main />
-// //   </React.StrictMode>,
-// //   );
+// root.render(
+//     <React.StrictMode>
+//     <Main />
+//   </React.StrictMode>,
+//   );
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>

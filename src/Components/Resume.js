@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PersonalPhoto from './Menna.jpg';
+import ResumePDF from './resume.pdf'; 
 
 class Resume extends Component {
   render() {
@@ -13,7 +14,7 @@ class Resume extends Component {
       </div>
 
       <div className="middlepane">
-          <h1 className="resume_name">Menna Elshahawy <a className="btn btn-primary me-2" href="" target="_blank" role="button">Download PDF version <i className="fas fa-download"></i></a></h1>
+          <h1 className="resume_name">Menna Elshahawy <a className="btn btn-primary me-2" href={ResumePDF} Download="Menna_Elshahawy_CV.pdf" target="_blank" role="button">Download PDF version <i className="fas fa-download"></i></a></h1>
 
 
           <p>I am a graduate from the German University in Cairo (GUC),
