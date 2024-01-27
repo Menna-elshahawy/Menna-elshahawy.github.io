@@ -14,7 +14,7 @@ class Navigationbar extends Component {
               <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item active">
-                    <a className="nav-link" href="/">RESUME</a>
+                    <a className="nav-link" href="#resume_begin">RESUME</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#portfolio">PORTFOLIO</a>

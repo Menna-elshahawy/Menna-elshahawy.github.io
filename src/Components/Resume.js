@@ -23,7 +23,7 @@ class Resume extends Component {
            I have a confident command over Unity3D, C#, Java, SQL, VR/AR technologies.</p>
            <hr/>
 
-          <h1 className = "sections_titles" >EXPERIENCE</h1>
+          <h1 className = "sections_titles" id = "resume_begin">EXPERIENCE</h1>
           <div>
           
               <div>
